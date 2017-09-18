@@ -1,0 +1,20 @@
+There is a BONUS CONTROLLER in main.cc looks like following
+const bool bonus = false;
+
+By default, bonus mode is off, you could change false to true to let the bonus mode on
+const bool bonus = true;
+
+Bonus features:
+When you are one block radius from a NON-HOSTILE merchant,
+	merchant would offer you some tasty powers.
+
+If player has enough money(Gold) to buy:
+	1. Type cl(Clairvoyance) to veil all poisons on the current floor
+	2. Type un(Undefeated) to be undefeated to all enemies, except for dragons, for 20 seconds
+If player does not have enough money, player could earn enough money and come back.
+
+IMPORTANT: Every time when changing bonus controller, re-compile is REQUIRED.
+NOTE: Player could only buy special features once in a floor, that is,
+	if player has already buy one feature in current floor, player
+	is not allowed to buy another features or but the same feature
+	multiple times.
